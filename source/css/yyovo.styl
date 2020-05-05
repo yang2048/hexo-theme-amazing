@@ -1,0 +1,102 @@
+/* 动态背景 */
+body {
+  background: url(https://api.btstu.cn/sjbz/api.php?lx=dongman&format=images);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+/*更好的侧边滚动条*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+  /*background: url(../images/scrollbar_arrow.png) no-repeat 0 0;*/  /*可以添加滚动条样式*/
+}
+/* 感谢阅读 */
+.read-over {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(217 11 24,.569);
+    font-size: 18px;
+}
+.column {
+  padding: 0.5rem;
+}
+.card + .card, .card + .column-right-shadow {
+    margin-top: 0.8rem;
+}
+.post-navigation {
+  background: #fff;
+  padding-top: 10px;
+}
++widescreen()
+    .is-1-column .container
+    .is-2-column .container
+    .is-3-column .container {
+        /* 关闭评论图片 后调节 原94%*/
+        max-width: 85%; /*screen-widescreen + 2 * extend-width - 2 * gap*/
+        width: 85%;
+    }
+    max-width: $desktop - 2 * $gap
+    width: $desktop - 2 * $gap
+    .column.is-3-widescreen {
+        flex: none;
+        width: 22%;
+    }
+    .column.is-6-widescreen {
+        width: 56%;
+    }
+    .column.is-4-widescreen {
+        flex: none;
+        width: 22%;
+    }
+    .column.is-8-widescreen {
+        width: 78%;
+    }
+    .column.is-9-widescreen {
+        width: 78%;
+    }
+
+.navbar-logo
+    img
+        max-height: 2.75rem
+.footer-logo
+    img
+        max-height: 3rem
+.footer {
+   box-shadow: 0px 4px 10px 10px rgba(0,0,0,0.05);
+   padding: 3rem 1.5rem 2rem;
+}
+.night .card, .night .navbar {
+    background-color: rgba(40,44,52,1);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
