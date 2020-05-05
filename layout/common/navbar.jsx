@@ -60,6 +60,9 @@ class Navbar extends Component {
                         <a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;">
                             <i class="fas fa-moon" id="night-icon"></i>
                         </a>
+                        <a class="navbar-item" title="管理后台" href="https://yyovo.avosapps.us/">
+                            <i class="fas fa-cogs" id="night-icon"></i>
+                        </a>
                     </div>
                 </div>
             </div>

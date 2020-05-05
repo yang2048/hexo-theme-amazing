@@ -29,7 +29,7 @@
 }
 .waifu-tool {
     display: none;
-    color: #aaa;
+    color: rgba(231, 231, 231, 0.76);
     top: 50px;
     right: 10px;
     position: absolute;

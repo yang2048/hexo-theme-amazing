@@ -65,8 +65,8 @@ module.exports = class extends Component {
                     {page.layout !== 'page' ? <div class="article-meta size-small is-uppercase level is-mobile">
                         <div class="level-left">
                             {/*置顶图标*/}
-                            {page.top > 0 ?
-                                <div style="color: #3273dc;font-size: 1.8rem;"><i class="fas fa-arrow-alt-circle-up"></i>&nbsp;</div> : null}
+                            {page.top > 0 ? <div class="level-item tag is-danger" style="background-color: #3273dc;"><i class="fas fa-arrow-alt-circle-up"></i>&nbsp;置顶</div> : null}
+                            {page.boutique ? <div class="level-item tag is-danger" style="background-color: #dd474f;"><i class="fab fa-hotjar"></i>&nbsp;精品</div> : null}
                             {/* Date */}
                             <i class="far fa-calendar-plus">&nbsp;</i>{date(page.date)}&nbsp;&nbsp;
 
@@ -140,6 +140,7 @@ module.exports = class extends Component {
                                 </div> : null
                             }
                         </div> : null}
+                    {!index ? <div class="read-over">-------------------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读-------------------</div> : null}
                     {/*copyright*/}
                     {hasCopyright && !index && page.layout == 'post' ?
                         <ul class="post-copyright">

@@ -13,25 +13,25 @@ head:
     open_graph:
         # Page title (og:title) (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: 呦哩の科技
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://yyovo.com/
         # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: /img/avatar.png
+        image: /img/avatar.jpg
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 辣椒の酱
+        site_name: 呦哩の科技
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: Vico
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: java,技术分享,后端开发,业务定制
         # Twitter card type (twitter:card)
         twitter_card:
         # Twitter ID (twitter:creator)
@@ -49,19 +49,19 @@ head:
     structured_data:
         # Page title (optional)
         # You should leave this blank for most of the time
-        title: 辣椒の酱
+        title: 呦哩の科技
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: java,技术分享,后端开发,支付框架,数据接口,算法,leetcode
+        description: java,技术分享,后端开发,业务定制
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: https://removeif.github.io/
+        url: https://yyovo.com/
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: removeif
+        author: Vico
         # Page images (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: /img/avatar.png
+        image: /img/avatar.jpg
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
@@ -80,14 +80,14 @@ navbar:
         影音: /media
         相册: /album
         友链: /friend
-        碎碎念: /self-talking
+        # 碎碎念: /self-talking
         留言: /message
         关于: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/yang2048'
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -100,7 +100,7 @@ footer:
             url: 'https://creativecommons.org/licenses/by/4.0/'
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/removeif'
+            url: 'https://github.com/yang2048'
 # Article related configurations
 article:
     # Code highlight settings
@@ -128,12 +128,12 @@ donate:
         # Donation entry name
         type: alipay
         # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135456.png'
+        qrcode: 'https://cdn.jsdelivr.net/gh/yang2048/media@master/img/alipay-qrcode-lite.jpg'
     -
         # Donation entry name
         type: wechat
         # Qrcode image URL
-        qrcode: 'https://raw.githubusercontent.com/removeif/blog_image/master/img/2019/20190802135550.png'
+        qrcode: 'https://cdn.jsdelivr.net/gh/yang2048/media@master/img/wx-qrcode-lite.png'
 #    -
 #    -
 #        type: patreon
@@ -146,11 +146,6 @@ donate:
 #        business: ''
 #        # Currency code
 #        currency_code: USD
-#    # Wechat donate button configurations
-#    -
-#        type: wechat
-#        # Wechat qrcode image URL
-#        qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -182,33 +177,33 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: 辣椒の酱
+        author: 呦哩の科技
         # Title of the author to be shown in the profile widget
-        author_title: 尚未执佩剑，转眼即江湖
+        author_title: 人生就像一杯茶，不会苦一辈子，但总会苦一阵子
         # Author's current location to be shown in the profile widget
-        location: 阿尔及利亚
+        location: 中国·上海
         # Path or URL to the avatar to be shown in the profile widget
-        avatar: /img/avatar.png
+        avatar: /img/avatar.jpg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
         gravatar:
         # URL or path for the follow button
-        follow_link: 'https://weibo.com/u/3050419984'
+        follow_link: 'https://yyovo.com'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/removeif'
-            Weibo:
-                icon: fab fa-weibo
-                url: 'https://weibo.com/u/3050419984'
+                url: 'https://github.com/yang2048'
+            # Weibo:
+            #     icon: fab fa-weibo
+            #     url: 'yyovo.com'
             Email:
                 icon: fa fa-envelope
-                url: 'mailto:removeif@163.com'
-            Next:
-                icon: fab fa-dribbble
-                url: 'https://removeif.github.io/remove.io'
+                url: 'mailto:yang2048f@qq.com'
+            QQ:
+                icon: fab fa-qq
+                url: 'http://wpa.qq.com/msgrd?v=3&uin=1129503415&site=qq&menu=yes'
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
@@ -255,7 +250,7 @@ widgets:
         # Hint text under the email input
         description: 输入邮箱开始订阅，更博后邮件通知！
         # Feedburner ID
-        feedburner_id: removeifFeedsId
+        feedburner_id: yyovoId
     # Google AdSense unit configurations
 #    -
 #        # Where should the widget be placed, left sidebar or right sidebar
@@ -275,7 +270,7 @@ plugins:
     # https://tongji.baidu.com
     baidu_analytics:
         # Baidu Analytics tracking ID
-        tracking_id:
+        tracking_id: 169f066459162b658f89e1b154b70547
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
     busuanzi: true
@@ -313,35 +308,35 @@ providers:
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: loli
     # https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v1.0.6/json_data/record.json, cdn前缀，对于hexo new page 页面中引用的资源文件不生效，需要手动改，如friend友链页中引用的资源
-    my_cdn_pre: #https://cdn.jsdelivr.net/gh/removeif/removeif.github.io@v2.2.1
+    my_cdn_pre: #https://cdn.jsdelivr.net/gh/yang2048/media@master/
 
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    type: gitalk
-    language: zh-CN #zh-CN #Localization language key, en, zh-CN and zh-TW are currently available.
-    owner: removeif         # (required) GitHub user name
-    repo: blog_comment          # (required) GitHub repository name
-    client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
-    client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
-    admin: ['removeif']
-    create_issue_manually: true
-    distraction_free_mode: false
-    has_hot_recommend: true # 是否有热门推荐
-    has_latest_comment: true #是否有最新评论
-
 # comment:
-#     type: valine
-#     app_id: rOtVIhvG3kd7QkMKe3naSU9R-gzGzoHsz
-#     app_key: F2sNV0CkqvbPat45di3DEn3z
-#     notify: false
-#     verify: false
-#     avatar: 'mp'
-#     placeholder: '留下您的高见！'
-#     has_latest_comment: true #是否有最新评论 true-有，false-无
-#     owner: 辣椒の酱 #博主名 最新评论标注[博主]
-#     required_fields: ['nick', 'mail', 'link']
-#     lang: en #zh-CN zh-TW en ja
+#     type: gitalk
+#     language: zh-CN #zh-CN #Localization language key, en, zh-CN and zh-TW are currently available.
+#     owner: removeif         # (required) GitHub user name
+#     repo: blog_comment          # (required) GitHub repository name
+#     client_id: 46a9f3481b46ea0129d8     # (required) OAuth application client id
+#     client_secret: 79c7c9cb847e141757d7864453bcbf89f0655b24 # (required) OAuth application client secret
+#     admin: ['removeif']
+#     create_issue_manually: true
+#     distraction_free_mode: false
+#     has_hot_recommend: true # 是否有热门推荐
+#     has_latest_comment: true #是否有最新评论
+
+comment:
+    type: valine
+    app_id: kt0w4ugKHseL3mSgVLoqXq4J-MdYXbMMI
+    app_key: EvupHhp0fMl1Q49OGva4zMSW
+    notify: false
+    verify: false
+    avatar: 'mp'
+    placeholder: '留下您的高见！'
+    has_latest_comment: true #是否有最新评论 true-有，false-无
+    owner: Vico #博主名 最新评论标注[博主]
+    required_fields: ['nick', 'mail', 'link']
+    lang: zh-CN #zh-CN zh-TW en ja
 
 
 # utteranc site: https://utteranc.es/
@@ -355,7 +350,7 @@ comment:
   
 global_gray: false #true 全局灰色，特定时期可以开启，false-不开启
 
-has_banner: false #首页是否有banner，true-是，false-否，如果配置了热门推荐显示热门推荐，banner配置数据在json_data/banner.json里按照配置格式配置好，至少三条
+has_banner: banner #首页是否有banner，true-是，false-否，如果配置了热门推荐显示热门推荐，banner配置数据在json_data/banner.json里按照配置格式配置好，至少三条
 
 has_latest_modify_time: true #是否显示最后修改时间 true开启，false-关闭   
 
@@ -366,7 +361,7 @@ has_copyright: true # 文中是否显示copyright true开启，false-关闭
 # http://sachinchoolur.github.io/lightGallery/docs/api.html 
 lightgallery_is_full: true #图片灯箱是否显示完整的插件(包括放大，分享等)，true-显示，false-显示简洁版
 
-website_start_time: 2018/11/11 00:00:00 #网站运行开始时间,不填不显示
+website_start_time: 2020/05/01 00:00:00 #网站运行开始时间,不填不显示
 
 footer_registered_no: #川ICP备88888888号-8 #备案号
 
@@ -376,6 +371,6 @@ has_live_2D_switch: true #live2D开关 true-开 false-关
 
 side_music_netease_id: 2364053447 #侧边栏网易云歌单id
 
-use_pjax: false #是否开启pjax，false-不开启，true-开启，开启后局部更新网页信息，切换页面背景音乐不间断等特性
+use_pjax: true #是否开启pjax，false-不开启，true-开启，开启后局部更新网页信息，切换页面背景音乐不间断等特性
 
 index_show_tags_cateories: true #首页文章item面板是否显示tag和categories

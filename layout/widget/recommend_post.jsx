@@ -6,7 +6,7 @@ class RecommendPosts extends Component {
         const { recommendPost, relatePost, recommend_title, related_title } = this.props;
 
         var i = 0, j = 0;
-        return <div>
+        return <div class="recommend-post-row">
             {relatePost.length > 0 ?
                 <div class="recommend-post">
                     <span class="is-size-6 has-text-grey has-mr-7">#&nbsp;{related_title}</span>

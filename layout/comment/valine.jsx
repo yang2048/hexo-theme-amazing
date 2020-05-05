@@ -49,6 +49,7 @@ class Valine extends Component {
             requiredFields:${JSON.stringify(requiredFields)}
         });`;
         return <Fragment>
+            <span id="comments" name="comments"></span>
             <div id="comment-container" class="content"></div>
             <script dangerouslySetInnerHTML={{ __html: js }}></script>
         </Fragment>;

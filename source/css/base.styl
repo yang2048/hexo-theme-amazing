@@ -814,9 +814,21 @@ footer.footer
     border-left: 3px solid #FF1700;
     background-color: #F9F9F9;
 }
-
+.recommend-post-row{
+  display: table;
+  clear: both;
+  width: 100%;
+}
 .recommend-post{
     margin: 0 0 1.5rem 0;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+@media screen and (max-width: 600px) {
+  .recommend-post {
+    width: 100%;
+  }
 }
 
 
@@ -873,7 +885,13 @@ a.navbar-item:hover,
 .navbar-link:hover,
 a.navbar-item.is-active,
 .navbar-link.is-active {
-    background-color: unset;
+    color: white;
+    background-color: #5d93db;
+}
+
+.night .navbar-main .navbar-menu .navbar-item:focus, .night .navbar-main .navbar-menu .navbar-item:hover {
+    color: #fff;
+    background-color: #373d48;
 }
 
 .article hr {
@@ -1246,7 +1264,7 @@ hr {
 // night Mode
 // author by removef
 // https://removeif.github.io/
-night-color = #151313
+night-color = #282d44
 night-color-hover = #7a7a7a
 night-link = #3273dc
 
