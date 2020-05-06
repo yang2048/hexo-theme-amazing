@@ -1,5 +1,5 @@
 {
-  "name": "hexo-theme-amazing",
+  "name": "hexo-theme-yyovo",
   "version": "3.0.0",
   "private": true,
   "engines": {
@@ -7,7 +7,7 @@
   },
   "description": "A simple, delicate, and modern theme for Hexo",
   "repository": "https://github.com/ppoffice/hexo-theme-amazing.git",
-  "author": "removeif <removeif@163.com>",
+  "author": "Vico <yang2048@qq.com>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js --ext .jsx --ext .json .",

@@ -69,17 +69,46 @@ module.exports = class extends Component {
                             {page.boutique ? <div class="level-item tag is-danger" style="background-color: #dd474f;"><i class="fab fa-hotjar"></i>&nbsp;精品</div> : null}
                             {/* Date */}
                             <i class="far fa-calendar-plus">&nbsp;</i>{date(page.date)}&nbsp;&nbsp;
-
-                            {showComment ?
-                                <a class="commentCountImg" href={`${url_for(page.link || page.path)}#comment-container`}><span class="display-none-class">{id}</span><i class="far fa-comment-dots" />&nbsp;<span class="commentCount" id={md5Id}>99+</span>&nbsp;&nbsp;</a> : null}
+                            {showComment ? 
+                                <a class="commentCountImg" href={`${url_for(page.link || page.path)}#comment-container`}>
+                                    <span class="display-none-class">{id}</span><i class="far fa-comment-dots" />&nbsp;
+                                    <span class="commentCount" id={md5Id}>99+</span>&nbsp;&nbsp;</a> : null}&nbsp;&nbsp;
                             {/* Read time */}
                             {article && article.readtime && article.readtime === true ? <span class="level-item">
                                 <i class="far fa-clock">&nbsp;</i>{timeStr} &nbsp;<i class="fas fa-pencil-alt">&nbsp;</i>{wordsCount}&nbsp;k
-                                </span> : null}
+                                </span> : null}&nbsp;&nbsp;
                             {/* Visitor counter */}
                             {!index && showBusuanziVisitor ? <span class="level-item" id="busuanzi_container_page_pv" dangerouslySetInnerHTML={{
                                 __html: '<i class="far fa-eye"></i>' + _p('plugin.visit', '&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span>')
-                            }}></span> : null}
+                            }}></span> : null}&nbsp;&nbsp;
+                            {!index && page.categories && page.categories.length ? <div class="level-item">
+                            {(() => {
+                                const categories = [];
+                                categories.push(<i class="fas fa-folder-open has-text-grey">&nbsp;</i>)
+                                page.categories.forEach((category, i) => {
+                                    categories.push(<a href={url_for(category.path)}>{category.name}</a>);
+                                    if (i < page.categories.length - 1) {
+                                        categories.push(<span>&nbsp;</span>);
+                                    }
+                                });
+                                return categories;
+                            })()}
+                        </div> : null}&nbsp;&nbsp;
+                        {/* tags */}
+                        {!index && page.tags && page.tags.length ?
+                            <div class="level-item">
+                                {(() => {
+                                    const tags = [];
+                                    tags.push(<i class="fas fa-tags has-text-grey">&nbsp;</i>)
+                                    page.tags.forEach((tag, i) => {
+                                        tags.push(<a href={url_for(tag.path)}>{tag.name}</a>);
+                                        if (i < page.tags.length - 1) {
+                                            tags.push(<span>&nbsp;</span>);
+                                        }
+                                    });
+                                    return tags;
+                                })()}
+                            </div> : null}
                         </div>
                     </div> : null}
                     {/* Title */}
